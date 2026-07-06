@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akinyoola Marvellous | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Prestige Digital Technologies<span>.</span></h2>
+        </div>
+
+        <nav>
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-btn" id="menuBtn">
+                ☰
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h3>Hello, I'm</h3>
+
+            <h1>Akinyoola Marvellous</h1>
+
+            <h2>
+                ICT Professional |
+                Web Developer |
+                Graphic Designer |
+                Motion Designer
+            </h2>
+
+            <p>
+                I create modern websites, stunning graphics,
+                motion designs, and digital experiences that help
+                brands stand out.
+            </p>
+
+            <div class="buttons">
+                <a href="#portfolio" class="btn">View Projects</a>
+
+                <a href="Akinyoola Marvellous CV.docx" class="btn btn-outline" download>
+                    Download CV
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/ChatGPT Image Jun 26, 2026, 12_41_28 PM.png" alt="Marvellous">
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am Akinyoola Marvellous, an ICT Professional and
+            creative entrepreneur behind Marv Design Code & Motion.
+
+            I specialize in:
+
+        </p>
+
+        <div class="skills">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Video Editing</span>
+            <span>Photo editing</span>
+            <span>Video Production</span>
+            <span>Graphic Design</span>
+            <span>Livestreaming</span>
+
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+
+        <h2 class="section-title">My Services</h2>
+
+        <div class="service-container">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>
+                    Responsive business websites, portfolios and landing pages.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>
+                    Flyers, posters, branding and social media designs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Motion Design</h3>
+                <p>
+                    Logo animations, intros and video editing.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>AI Automation</h3>
+                <p>
+                    Smart AI solutions and workflow automation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="portfolio-container">
+
+            <div class="project">
+
+                <img src="images/Black and Yellow Geometric Graphic Design Facebook Post_20250416_170749_0000.png" alt="">
+
+                <h3>Car Dealer Website</h3>
+
+                <p>Modern automobile business website.</p>
+
+                <a href="car-dealer-website.html">View</a>
+
+            </div>
+
+            <div class="project">
+
+                <img src="images/Let's Talk_20251031_140233_0000.png" alt="">
+
+                <h3>Business Marketing</h3>
+
+                <p>Laravel based hospital system.</p>
+                
+                <a href="business-marketing.html">View</a>
+
+            </div>
+
+            <div class="project">
+
+                <img src="images/IMG-20260612-WA0020.jpg" alt="">
+
+                <h3>Graduation Poster Design</h3>
+
+                <p>Creative poster design project.</p>
+
+                <a href="project-detail.html">View</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea rows="6" placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <h3>Prestige Digital Technologies</h3>
+
+        <p>
+            © 2026 All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
