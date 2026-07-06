@@ -1,0 +1,131 @@
+// ===============================
+// MOBILE MENU
+// ===============================
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll("#navLinks a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+
+
+// ===============================
+// HEADER SHADOW ON SCROLL
+// ===============================
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 50){
+
+        header.style.boxShadow =
+        "0 5px 20px rgba(0,0,0,0.3)";
+
+    }else{
+
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+
+// ===============================
+// FADE IN ANIMATION ON SCROLL
+// ===============================
+
+const sections = document.querySelectorAll(
+".about, .services, .portfolio, .contact"
+);
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity = "1";
+
+            entry.target.style.transform =
+            "translateY(0)";
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+sections.forEach(section=>{
+
+    section.style.opacity = "0";
+
+    section.style.transform =
+    "translateY(50px)";
+
+    section.style.transition =
+    "all 0.8s ease";
+
+    observer.observe(section);
+
+});
+
+
+// ===============================
+// TYPING EFFECT
+// ===============================
+
+const titles = [
+    "ICT Professional",
+    "Web Developer",
+    "Graphic Designer",
+    "Motion Designer"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+const typingElement =
+document.querySelector(".hero-text h2");
+
+function type(){
+
+    if(count === titles.length){
+        count = 0;
+    }
+
+    currentText = titles[count];
+
+    letter = currentText.slice(0, ++index);
+
+    typingElement.textContent = letter;
+
+    if(letter.length === currentText.length){
+
+        count++;
+
+        index = 0;
+
+        setTimeout(type,1000);
+
+    }else{
+
+        setTimeout(type,100);
+
+    }
+
+}
+
+type();
